@@ -4,54 +4,58 @@
 
 **Entrega:** 01 de 06  
 **Quantidade:** 50 missões  
-**Tema:** Estruturas condicionais  
+**Tema:** Fundamentos e estruturas condicionais  
 **Linguagens:** C, Python e JavaScript/Node.js
+
+Todas as missões deverão ser implementadas nas três linguagens. Os enunciados e critérios de aprovação são iguais, respeitando as particularidades de cada linguagem.
 
 ---
 
 # 1. Etapa I — Aprendizagem e reconhecimento
 
-*Missões 001–010 | Primeiro contato com as decisões.*
+*Missões 001–010 | Primeiro contato com a lógica e as decisões.*
 
-O aventureiro começa a compreender como os mecanismos da vila interpretam informações e tomam decisões.
+Nesta etapa, o objetivo é compreender como os programas recebem informações, realizam comparações e executam instruções com base em condições.
 
 ### Missão 001 — O Portão da Vila
 
-**Dificuldade:** 1/10 | **Recompensa:** 20 XP
+**Dificuldade:** 1/10
 
 Um guarda controla a entrada da vila.
 
-Para entrar, o aventureiro precisa possuir nível igual ou superior a 5.
+Para entrar, o visitante precisa possuir nível igual ou superior a 5.
 
-**Objetivo:** receba o nível do aventureiro e informe se ele está autorizado a entrar.
+**Objetivo:** receba o nível do visitante e informe quando ele estiver autorizado a entrar.
 
 **Requisitos:**
-- Utilize uma condicional simples.
+- Utilize uma variável numérica.
+- Utilize uma condicional simples (`if`).
+- Utilize o operador `>=`.
 - Não utilize `else`.
-- Exiba uma mensagem somente quando a condição for verdadeira.
 
 **Testes sugeridos:** níveis 3, 5 e 10.
 
 ### Missão 002 — A Espada Enferrujada
 
-**Dificuldade:** 1/10 | **Recompensa:** 20 XP
+**Dificuldade:** 1/10
 
-Um ferreiro precisa identificar equipamentos danificados.
+Um ferreiro precisa identificar equipamentos que necessitam de manutenção.
 
-Uma espada está enferrujada quando sua durabilidade é inferior a 30.
+Uma espada precisa de manutenção quando sua durabilidade é inferior a 30.
 
 **Objetivo:** receba a durabilidade de uma espada e informe quando ela precisar de manutenção.
 
 **Requisitos:**
-- Utilize `if`.
 - Trabalhe com valores numéricos.
+- Utilize `if`.
+- Utilize o operador `<`.
 - Considere valores entre 0 e 100 como válidos.
 
 **Testes sugeridos:** 10, 29, 30 e 85.
 
 ### Missão 003 — O Baú Misterioso
 
-**Dificuldade:** 1/10 | **Recompensa:** 20 XP
+**Dificuldade:** 1/10
 
 Um aventureiro encontrou um baú contendo determinada quantidade de objetos.
 
@@ -60,14 +64,15 @@ O baú é considerado cheio quando possui mais de 10 objetos.
 **Objetivo:** receba a quantidade de objetos e informe quando o baú estiver cheio.
 
 **Requisitos:**
-- Utilize uma condicional simples.
+- Utilize uma variável inteira.
+- Utilize `if`.
 - Trabalhe com o operador `>`.
 
 **Testes sugeridos:** 0, 10, 11 e 20.
 
 ### Missão 004 — O Guerreiro Experiente
 
-**Dificuldade:** 2/10 | **Recompensa:** 25 XP
+**Dificuldade:** 2/10
 
 A academia de aventureiros deseja identificar personagens experientes.
 
@@ -82,7 +87,7 @@ Um aventureiro é considerado experiente quando possui pelo menos 20 missões co
 
 ### Missão 005 — O Alerta da Floresta
 
-**Dificuldade:** 2/10 | **Recompensa:** 25 XP
+**Dificuldade:** 2/10
 
 Os guardas da vila monitoram o nível de ameaça da floresta.
 
@@ -93,12 +98,13 @@ Quando o nível ultrapassa 70 pontos, um alerta precisa ser emitido.
 **Requisitos:**
 - Utilize uma condicional simples.
 - Trabalhe com comparação numérica.
+- Utilize o operador `>`.
 
 **Testes sugeridos:** 40, 70, 71 e 100.
 
 ### Missão 006 — O Aprendiz de Magia
 
-**Dificuldade:** 2/10 | **Recompensa:** 25 XP
+**Dificuldade:** 2/10
 
 Uma escola de magia deseja identificar aprendizes que possuem energia suficiente para executar um feitiço.
 
@@ -108,12 +114,13 @@ O feitiço exige pelo menos 50 pontos de energia.
 
 **Requisitos:**
 - Utilize `if`.
-- Utilize comparação numérica.
+- Trabalhe com valores numéricos.
+- Utilize o operador `>=`.
 - Não utilize `else`.
 
 ### Missão 007 — A Missão da Guilda
 
-**Dificuldade:** 2/10 | **Recompensa:** 25 XP
+**Dificuldade:** 2/10
 
 A guilda deseja identificar missões concluídas.
 
@@ -122,32 +129,32 @@ Uma missão é considerada concluída quando seu status é igual a `"concluida"`
 **Objetivo:** receba o status de uma missão e informe quando ela estiver concluída.
 
 **Requisitos:**
-- Utilize comparação de igualdade.
 - Trabalhe com strings.
+- Utilize comparação de igualdade.
 - Utilize uma condicional simples.
 
 ### Missão 008 — O Comerciante Generoso
 
-**Dificuldade:** 2/10 | **Recompensa:** 30 XP
+**Dificuldade:** 2/10
 
 Um comerciante oferece uma recompensa especial quando um cliente realiza uma compra superior a 200 unidades monetárias.
 
 **Objetivo:** receba o valor da compra e informe quando o cliente tiver direito à recompensa.
 
 **Requisitos:**
+- Trabalhe com valores numéricos decimais.
 - Utilize `if`.
-- Trabalhe com valores decimais.
 - Utilize comparação numérica.
 
 ### Missão 009 — O Portador da Chave
 
-**Dificuldade:** 3/10 | **Recompensa:** 30 XP
+**Dificuldade:** 3/10
 
 Uma porta antiga possui um mecanismo de segurança.
 
-Ela somente pode ser aberta quando o aventureiro possui uma chave, representada por um valor booleano verdadeiro.
+Ela somente pode ser aberta quando o visitante possui uma chave, representada por um valor booleano verdadeiro.
 
-**Objetivo:** receba a informação de posse da chave e informe se o mecanismo poderá ser aberto.
+**Objetivo:** receba a informação de posse da chave e informe quando o mecanismo poderá ser aberto.
 
 **Requisitos:**
 - Trabalhe com booleanos.
@@ -156,24 +163,22 @@ Ela somente pode ser aberta quando o aventureiro possui uma chave, representada 
 
 ### Missão 010 — O Primeiro Julgamento
 
-**Dificuldade:** 3/10 | **Recompensa:** 40 XP
+**Dificuldade:** 3/10
 
-O conselho da vila precisa verificar se um aventureiro possui os requisitos mínimos para participar do treinamento.
+O conselho da vila precisa verificar se um visitante possui os requisitos mínimos para participar do treinamento.
 
 Os requisitos são:
 - Nível igual ou superior a 10.
 - Pelo menos 5 missões concluídas.
 - Possuir um equipamento.
 
-**Objetivo:** receba essas três informações e informe quando o aventureiro cumprir todos os requisitos.
+**Objetivo:** receba essas três informações e informe quando o visitante cumprir todos os requisitos.
 
 **Requisitos:**
 - Utilize uma condicional simples.
 - Utilize o operador lógico AND (`&&` em JavaScript e C; `and` em Python).
-- Não utilize `else`.
 - Trabalhe com números e booleanos.
-
-**Marco de progressão:** ao concluir esta missão e atingir 10 missões aprovadas, o personagem desbloqueia o título **Recruta da Vila**.
+- Não utilize `else`.
 
 ---
 
@@ -181,11 +186,11 @@ Os requisitos são:
 
 *Missões 011–020 | Primeiras decisões completas.*
 
-Agora os mecanismos da vila precisam tomar decisões diferentes conforme as condições recebidas. O aventureiro começará a trabalhar com dois caminhos possíveis.
+Nesta etapa, o programa deverá apresentar resultados diferentes conforme as condições recebidas. O objetivo é compreender os dois caminhos possíveis de uma decisão.
 
 ### Missão 011 — O Aventureiro Ferido
 
-**Dificuldade:** 3/10 | **Recompensa:** 35 XP
+**Dificuldade:** 3/10
 
 Um curandeiro precisa identificar a condição de um aventureiro.
 
@@ -193,11 +198,13 @@ Um curandeiro precisa identificar a condição de um aventureiro.
 - HP acima de zero: aventureiro ativo.
 - HP igual ou inferior a zero: aventureiro incapacitado.
 
-**Requisitos:** utilize `if/else` e comparação numérica.
+**Requisitos:**
+- Utilize `if/else`.
+- Trabalhe com comparação numérica.
 
 ### Missão 012 — O Mercado da Vila
 
-**Dificuldade:** 3/10 | **Recompensa:** 35 XP
+**Dificuldade:** 3/10
 
 Um comerciante precisa verificar se um cliente consegue adquirir uma mercadoria.
 
@@ -212,55 +219,62 @@ Possuir exatamente o valor do produto é suficiente.
 
 ### Missão 013 — O Teste do Guerreiro
 
-**Dificuldade:** 3/10 | **Recompensa:** 35 XP
+**Dificuldade:** 3/10
 
 Uma academia deseja classificar o resultado de um teste físico.
 
 A pontuação mínima para aprovação é 60.
 
-**Objetivo:** receba a pontuação e informe se o guerreiro foi aprovado ou reprovado.
+**Objetivo:** receba a pontuação e informe se o participante foi aprovado ou reprovado.
 
-**Requisitos:** utilize `if/else` e comparação numérica.
+**Requisitos:**
+- Utilize `if/else`.
+- Trabalhe com comparação numérica.
 
 ### Missão 014 — A Ponte Quebrada
 
-**Dificuldade:** 3/10 | **Recompensa:** 40 XP
+**Dificuldade:** 3/10
 
 Uma ponte só pode ser atravessada quando está em boas condições.
 
 **Objetivo:** receba um booleano indicando se a ponte está segura e informe se a travessia está liberada ou bloqueada.
 
-**Requisitos:** utilize `if/else` e trabalhe com booleanos.
+**Requisitos:**
+- Utilize `if/else`.
+- Trabalhe com booleanos.
 
 ### Missão 015 — O Pedido do Comerciante
 
-**Dificuldade:** 4/10 | **Recompensa:** 40 XP
+**Dificuldade:** 4/10
 
 Um produto custa 35 unidades monetárias.
 
-**Objetivo:** receba o saldo do aventureiro e informe:
+**Objetivo:** receba o saldo do visitante e informe:
 - Se pode comprar o produto, apresente quanto sobrará.
 - Se não pode, apresente quanto ainda falta.
 
 **Requisitos:**
 - Utilize `if/else`.
-- Realize cálculos conforme o resultado da condição.
+- Realize cálculos aritméticos conforme o resultado da condição.
+- Apresente os resultados de maneira clara.
 
 ### Missão 016 — O Resultado da Expedição
 
-**Dificuldade:** 4/10 | **Recompensa:** 40 XP
+**Dificuldade:** 4/10
 
 Uma guilda precisa identificar o resultado de uma expedição.
 
-Uma expedição é considerada bem-sucedida quando o aventureiro derrotou pelo menos um inimigo e concluiu o objetivo principal.
+Uma expedição é considerada bem-sucedida quando o participante derrotou pelo menos um inimigo e concluiu o objetivo principal.
 
 **Objetivo:** receba a quantidade de inimigos derrotados e um booleano indicando se o objetivo principal foi concluído. Informe se a expedição foi bem-sucedida ou fracassou.
 
-**Requisitos:** utilize `if/else` e operadores lógicos.
+**Requisitos:**
+- Utilize `if/else`.
+- Combine comparação numérica e operador lógico AND.
 
 ### Missão 017 — O Controle de Estoque
 
-**Dificuldade:** 4/10 | **Recompensa:** 40 XP
+**Dificuldade:** 4/10
 
 Uma loja deseja identificar quando precisa repor mercadorias.
 
@@ -268,11 +282,14 @@ O estoque mínimo é de 10 unidades.
 
 **Objetivo:** receba a quantidade disponível e informe se o estoque precisa de reposição ou está suficiente.
 
-**Requisitos:** utilize `if/else` e comparação numérica.
+**Requisitos:**
+- Utilize `if/else`.
+- Trabalhe com comparação numérica.
+- Considere exatamente 10 unidades como estoque suficiente.
 
 ### Missão 018 — O Portal Antigo
 
-**Dificuldade:** 4/10 | **Recompensa:** 45 XP
+**Dificuldade:** 4/10
 
 Um portal exige uma quantidade mínima de 80 pontos de energia para ser ativado.
 
@@ -280,11 +297,14 @@ Um portal exige uma quantidade mínima de 80 pontos de energia para ser ativado.
 
 Se não puder, informe quantos pontos faltam.
 
-**Requisitos:** utilize `if/else` e operações aritméticas.
+**Requisitos:**
+- Utilize `if/else`.
+- Trabalhe com operações aritméticas.
+- Apresente o resultado conforme a decisão.
 
 ### Missão 019 — O Julgamento do Ferreiro
 
-**Dificuldade:** 4/10 | **Recompensa:** 45 XP
+**Dificuldade:** 4/10
 
 Um ferreiro avalia um equipamento de acordo com sua resistência.
 
@@ -294,24 +314,27 @@ Classificação:
 
 **Objetivo:** receba a resistência e apresente a classificação.
 
-**Requisitos:** utilize `if/else` e comparação numérica.
+**Requisitos:**
+- Utilize `if/else`.
+- Trabalhe com comparação numérica.
 
 ### Missão 020 — O Contrato da Guilda
 
-**Dificuldade:** 5/10 | **Recompensa:** 50 XP
+**Dificuldade:** 5/10
 
-Uma guilda oferece contratos para aventureiros.
+Uma guilda oferece contratos para participantes que atendam a determinados requisitos.
 
 Um contrato pode ser aceito quando:
-- O aventureiro possui nível mínimo 15.
+- O participante possui nível mínimo 15.
 - Possui pelo menos 10 missões concluídas.
 - Está disponível para trabalhar.
 
 **Objetivo:** receba os dados e informe se o contrato pode ser aceito.
 
-**Requisitos:** utilize `if/else`, operadores relacionais e operadores lógicos.
-
-**Marco de progressão:** ao concluir esta missão e atingir 20 missões aprovadas, o personagem desbloqueia o título **Aprendiz da Lógica**.
+**Requisitos:**
+- Utilize `if/else`.
+- Combine operadores relacionais e lógicos.
+- Trabalhe com números e booleanos.
 
 ---
 
@@ -319,103 +342,127 @@ Um contrato pode ser aceito quando:
 
 *Missões 021–030 | Mais de uma condição.*
 
-O aventureiro já compreende decisões simples. Agora deverá combinar condições e utilizar operadores lógicos para construir regras mais elaboradas.
+Nesta etapa, o objetivo é combinar diferentes condições, construir regras mais elaboradas e compreender como as decisões podem ser organizadas.
 
 ### Missão 021 — A Classificação dos Aventureiros
 
-**Dificuldade:** 5/10 | **Recompensa:** 50 XP
+**Dificuldade:** 5/10
 
-A guilda classifica aventureiros conforme o nível:
+A guilda classifica participantes conforme o nível:
 - Abaixo de 10: iniciante.
 - De 10 a 29: intermediário.
 - Igual ou superior a 30: veterano.
 
 **Objetivo:** receba o nível e apresente a classificação.
 
-**Requisitos:** utilize `if/else if/else` ou a estrutura equivalente da linguagem.
+**Requisitos:**
+- Utilize `if/else if/else` ou estrutura equivalente.
+- Trabalhe com comparações numéricas.
+- Garanta que cada nível pertença a apenas uma classificação.
 
 ### Missão 022 — O Cofre dos Anões
 
-**Dificuldade:** 5/10 | **Recompensa:** 50 XP
+**Dificuldade:** 5/10
 
 Um cofre exige duas chaves diferentes para ser aberto.
 
-**Objetivo:** receba dois booleanos, representando a posse de cada chave, e informe se o cofre pode ser aberto.
+**Objetivo:** receba dois valores booleanos, representando a posse de cada chave, e informe se o cofre pode ser aberto.
 
-**Requisitos:** utilize o operador lógico AND.
+**Requisitos:**
+- Utilize o operador lógico AND.
+- Trabalhe com booleanos.
+- Apresente o resultado utilizando uma condicional.
 
 ### Missão 023 — A Escolha do Caminho
 
-**Dificuldade:** 5/10 | **Recompensa:** 50 XP
+**Dificuldade:** 5/10
 
-Um aventureiro pode entrar na floresta por dois caminhos:
+Um visitante pode entrar na floresta por dois caminhos:
 - Caminho A: possui uma bússola.
 - Caminho B: possui um mapa.
 
 **Objetivo:** receba essas informações e informe se existe pelo menos um recurso disponível para orientação.
 
-**Requisitos:** utilize o operador lógico OR.
+**Requisitos:**
+- Utilize o operador lógico OR.
+- Trabalhe com booleanos.
+- Apresente o resultado utilizando uma condicional.
 
 ### Missão 024 — O Imposto do Reino
 
-**Dificuldade:** 5/10 | **Recompensa:** 55 XP
+**Dificuldade:** 5/10
 
 O reino cobra uma taxa de comerciantes com faturamento mensal superior a 5.000 unidades monetárias.
 
 **Objetivo:** receba o faturamento e informe se o comerciante precisa pagar a taxa.
 
-**Requisitos:** utilize comparação numérica e `if/else`.
+**Requisitos:**
+- Utilize comparação numérica.
+- Utilize `if/else`.
+- Considere o limite de 5.000 corretamente.
 
 ### Missão 025 — O Sistema de Recompensas
 
-**Dificuldade:** 5/10 | **Recompensa:** 55 XP
+**Dificuldade:** 5/10
 
-Uma missão oferece recompensa especial quando o aventureiro:
+Uma missão oferece uma recompensa especial quando o participante:
 - Possui nível mínimo 20; ou
 - Derrotou pelo menos 5 monstros.
 
 **Objetivo:** receba as informações e determine se a recompensa especial será liberada.
 
-**Requisitos:** utilize operadores relacionais e OR.
+**Requisitos:**
+- Utilize operadores relacionais.
+- Utilize o operador lógico OR.
+- Trabalhe com uma decisão composta.
 
 ### Missão 026 — A Entrada da Masmorra
 
-**Dificuldade:** 5/10 | **Recompensa:** 55 XP
+**Dificuldade:** 5/10
 
 Uma masmorra possui duas restrições:
-- O aventureiro precisa ter nível mínimo 15.
+- O participante precisa ter nível mínimo 15.
 - Não pode estar incapacitado.
 
-**Objetivo:** receba o nível e o estado do aventureiro e informe se ele poderá entrar.
+**Objetivo:** receba o nível e o estado do participante e informe se ele poderá entrar.
 
-**Requisitos:** utilize AND e negação lógica.
+**Requisitos:**
+- Utilize o operador AND.
+- Utilize negação lógica.
+- Trabalhe com booleanos e comparações numéricas.
 
 ### Missão 027 — A Promoção do Comerciante
 
-**Dificuldade:** 6/10 | **Recompensa:** 60 XP
+**Dificuldade:** 6/10
 
 Uma loja oferece descontos conforme o valor da compra:
 - Acima de 500 unidades monetárias: 20%.
-- Acima de 200 unidades monetárias: 10%.
+- Acima de 200 unidades monetárias até 500: 10%.
 - Demais compras: sem desconto.
 
 **Objetivo:** receba o valor da compra, calcule o desconto e apresente o preço final.
 
-**Requisitos:** utilize `if/else if/else` e cálculos aritméticos.
+**Requisitos:**
+- Utilize `if/else if/else`.
+- Realize cálculos aritméticos.
+- Considere corretamente os limites de cada faixa.
 
 ### Missão 028 — O Julgamento dos Elementos
 
-**Dificuldade:** 6/10 | **Recompensa:** 60 XP
+**Dificuldade:** 6/10
 
 Um aprendiz pode utilizar uma técnica especial quando possui pelo menos 30 pontos de energia e domina pelo menos um destes elementos: fogo, água ou terra.
 
 **Objetivo:** receba a energia e três informações booleanas sobre domínio elemental. Determine se a técnica pode ser utilizada.
 
-**Requisitos:** combine AND e OR.
+**Requisitos:**
+- Combine AND e OR.
+- Trabalhe com múltiplas variáveis booleanas.
+- Organize a expressão lógica de maneira clara.
 
 ### Missão 029 — O Sistema de Segurança
 
-**Dificuldade:** 6/10 | **Recompensa:** 60 XP
+**Dificuldade:** 6/10
 
 Uma cidade possui um sistema de controle de entrada.
 
@@ -423,13 +470,16 @@ O acesso é permitido quando o visitante possui autorização e não está na li
 
 **Objetivo:** receba os dois estados booleanos e determine se o acesso será liberado.
 
-**Requisitos:** utilize AND e negação lógica.
+**Requisitos:**
+- Utilize AND.
+- Utilize negação lógica.
+- Apresente o resultado da avaliação.
 
 ### Missão 030 — O Conselho dos Anciãos
 
-**Dificuldade:** 7/10 | **Recompensa:** 70 XP
+**Dificuldade:** 7/10
 
-O conselho precisa avaliar se um aventureiro pode se tornar líder de uma expedição.
+O conselho precisa avaliar se um participante pode assumir a liderança de uma expedição.
 
 Requisitos:
 - Nível mínimo 30.
@@ -439,23 +489,25 @@ Requisitos:
 
 **Objetivo:** receba as informações e apresente o resultado do julgamento.
 
-**Requisitos:** utilize múltiplas comparações, operadores lógicos e condicionais compostas.
-
-**Marco de progressão:** ao concluir esta missão e atingir 30 missões aprovadas, o personagem desbloqueia o título **Desbravador das Condições**.
+**Requisitos:**
+- Utilize múltiplas comparações.
+- Combine operadores lógicos.
+- Trabalhe com strings, números e booleanos.
+- Organize as condições de maneira legível.
 
 ---
 
 # 4. Etapa IV — Problemas contextualizados
 
-*Missões 031–040 | Aplicações do mundo real.*
+*Missões 031–040 | Aplicações de regras e decisões em situações práticas.*
 
-Os mecanismos da vila precisam de soluções mais elaboradas. O aventureiro começará a desenvolver pequenas regras de negócio, semelhantes às encontradas em sistemas comerciais, administrativos e de autenticação.
+Nesta etapa, as estruturas condicionais começam a ser utilizadas para resolver problemas contextualizados, semelhantes aos encontrados em sistemas comerciais, administrativos e financeiros.
 
 ### Missão 031 — O Sistema de RH da Vila
 
-**Dificuldade:** 7/10 | **Recompensa:** 70 XP
+**Dificuldade:** 7/10
 
-Uma empresa da vila precisa classificar candidatos para uma vaga.
+Uma empresa precisa classificar candidatos conforme a idade.
 
 Critérios:
 - Menos de 18 anos: não atende à idade mínima.
@@ -464,28 +516,34 @@ Critérios:
 
 **Objetivo:** receba a idade e apresente a classificação.
 
-**Requisitos:** utilize condicionais encadeadas e considere os limites das faixas.
+**Requisitos:**
+- Utilize condicionais encadeadas.
+- Considere corretamente os limites das faixas.
+- Trabalhe com comparação numérica.
 
 ### Missão 032 — O Caixa da Taverna
 
-**Dificuldade:** 7/10 | **Recompensa:** 70 XP
+**Dificuldade:** 7/10
 
 Uma taverna precisa calcular o valor final de uma conta.
 
 Regras:
 - Compras acima de 300 unidades monetárias recebem 15% de desconto.
-- Compras acima de 150 recebem 5%.
+- Compras acima de 150 até 300 recebem 5%.
 - As demais não recebem desconto.
 
 **Objetivo:** receba o total da conta e calcule o valor final.
 
-**Requisitos:** utilize condicionais encadeadas e cálculos aritméticos.
+**Requisitos:**
+- Utilize condicionais encadeadas.
+- Realize cálculos aritméticos.
+- Apresente o desconto e o preço final.
 
 ### Missão 033 — O Controle de Acesso Bancário
 
-**Dificuldade:** 7/10 | **Recompensa:** 75 XP
+**Dificuldade:** 7/10
 
-Um banco medieval precisa validar uma operação financeira.
+Um banco precisa validar uma operação financeira.
 
 A operação somente será autorizada quando:
 - A conta estiver ativa.
@@ -494,11 +552,14 @@ A operação somente será autorizada quando:
 
 **Objetivo:** receba os dados e determine se a operação será autorizada.
 
-**Requisitos:** combine condições booleanas e numéricas.
+**Requisitos:**
+- Combine condições booleanas e numéricas.
+- Utilize operadores lógicos.
+- Apresente o resultado da autorização.
 
 ### Missão 034 — A Distribuição de Recursos
 
-**Dificuldade:** 7/10 | **Recompensa:** 75 XP
+**Dificuldade:** 7/10
 
 Um centro de atendimento da vila distribui recursos conforme a faixa etária dos habitantes.
 
@@ -509,24 +570,30 @@ Classificação:
 
 **Objetivo:** receba a idade e apresente a categoria correspondente.
 
-**Requisitos:** utilize condicionais encadeadas e comparação numérica.
+**Requisitos:**
+- Utilize condicionais encadeadas.
+- Trabalhe com comparação numérica.
+- Considere os limites das faixas.
 
 ### Missão 035 — O Sistema de Notas da Academia
 
-**Dificuldade:** 7/10 | **Recompensa:** 75 XP
+**Dificuldade:** 7/10
 
 Uma academia utiliza a seguinte classificação:
 - Nota inferior a 5: reprovado.
-- Nota de 5 até menos de 7: recuperação.
+- Nota igual ou superior a 5 e inferior a 7: recuperação.
 - Nota igual ou superior a 7: aprovado.
 
 **Objetivo:** receba a nota e apresente a situação acadêmica.
 
-**Requisitos:** utilize condicionais encadeadas e considere os limites das faixas.
+**Requisitos:**
+- Utilize condicionais encadeadas.
+- Trabalhe com valores decimais.
+- Considere corretamente os limites das faixas.
 
 ### Missão 036 — O Frete dos Mercadores
 
-**Dificuldade:** 7/10 | **Recompensa:** 80 XP
+**Dificuldade:** 7/10
 
 Uma empresa de transporte cobra frete conforme o valor da compra:
 - Compra igual ou superior a 500 unidades monetárias: frete grátis.
@@ -534,13 +601,16 @@ Uma empresa de transporte cobra frete conforme o valor da compra:
 
 **Objetivo:** receba o valor da compra e apresente o valor do frete e o total.
 
-**Requisitos:** utilize condicionais e cálculos aritméticos.
+**Requisitos:**
+- Utilize condicionais.
+- Realize cálculos aritméticos.
+- Apresente o valor final da operação.
 
 ### Missão 037 — O Controle de Ponto
 
-**Dificuldade:** 8/10 | **Recompensa:** 80 XP
+**Dificuldade:** 8/10
 
-Uma empresa precisa identificar a situação de um funcionário.
+Uma empresa precisa identificar a situação de um funcionário conforme o horário de entrada.
 
 Regras:
 - Entrada até 08:00: pontual.
@@ -553,10 +623,11 @@ Regras:
 - Utilize condicionais encadeadas.
 - Trabalhe com horas e minutos.
 - Considere horários válidos no formato de 24 horas.
+- Compare os horários corretamente, considerando também os minutos.
 
 ### Missão 038 — O Inventário do Armazém
 
-**Dificuldade:** 8/10 | **Recompensa:** 80 XP
+**Dificuldade:** 8/10
 
 Um armazém precisa classificar a quantidade de produtos disponíveis:
 - Estoque igual a zero: esgotado.
@@ -566,11 +637,14 @@ Um armazém precisa classificar a quantidade de produtos disponíveis:
 
 **Objetivo:** receba a quantidade e apresente a situação.
 
-**Requisitos:** utilize condicionais encadeadas e comparação numérica.
+**Requisitos:**
+- Utilize condicionais encadeadas.
+- Trabalhe com comparação numérica.
+- Considere quantidades inteiras não negativas.
 
 ### Missão 039 — O Motor de Aprovação
 
-**Dificuldade:** 8/10 | **Recompensa:** 85 XP
+**Dificuldade:** 8/10
 
 Uma instituição deseja avaliar se um candidato atende aos critérios para participar de um programa.
 
@@ -581,11 +655,14 @@ Regras:
 
 **Objetivo:** receba os dados e informe se o candidato atende aos critérios iniciais.
 
-**Requisitos:** combine condições numéricas e booleanas.
+**Requisitos:**
+- Combine condições numéricas e booleanas.
+- Utilize operadores lógicos.
+- Apresente o resultado da avaliação.
 
 ### Missão 040 — O Sistema de Pedidos da Taverna
 
-**Dificuldade:** 8/10 | **Recompensa:** 90 XP
+**Dificuldade:** 8/10
 
 Uma taverna precisa validar pedidos.
 
@@ -601,21 +678,20 @@ Regras:
 - Combine condições.
 - Utilize condicionais encadeadas ou aninhadas.
 - Realize cálculos conforme o resultado da validação.
-- Informe o motivo da recusa quando o pedido não puder ser concluído.
-
-**Marco de progressão:** ao concluir esta missão e atingir 40 missões aprovadas, o personagem desbloqueia o título **Restaurador de Mecanismos**.
+- Informe os motivos da recusa quando o pedido não puder ser concluído.
+- Considere a ordem das verificações.
 
 ---
 
 # 5. Etapa V — Desafios avançados
 
-*Missões 041–049 | Raciocínio e organização de decisões.*
+*Missões 041–049 | Raciocínio lógico e organização de decisões.*
 
-Os últimos mecanismos da vila são mais complexos. O aventureiro precisará organizar regras, validar múltiplas informações e evitar decisões contraditórias.
+Nesta etapa, os desafios exigem a combinação de várias regras. O objetivo é desenvolver a capacidade de construir expressões lógicas, organizar decisões e evitar resultados contraditórios.
 
 ### Missão 041 — O Detector de Fraudes
 
-**Dificuldade:** 8/10 | **Recompensa:** 100 XP
+**Dificuldade:** 8/10
 
 Um banco monitora transações suspeitas.
 
@@ -625,27 +701,33 @@ Uma operação será sinalizada quando:
 
 **Objetivo:** receba os dados e determine se a operação deve ser sinalizada.
 
-**Requisitos:** combine AND e OR em uma expressão lógica.
+**Requisitos:**
+- Combine AND e OR.
+- Utilize comparações numéricas e booleanas.
+- Organize corretamente a precedência das operações lógicas.
 
 ### Missão 042 — O Sistema de Progressão de Classes
 
-**Dificuldade:** 8/10 | **Recompensa:** 100 XP
+**Dificuldade:** 8/10
 
-Um aventureiro deseja evoluir de classe.
+Um sistema de treinamento precisa verificar se um participante pode avançar para uma nova categoria.
 
 Regras:
 - Nível mínimo 20.
-- Pelo menos 10 missões concluídas.
-- Possuir um equipamento adequado.
-- Não estar participando de outra missão.
+- Pelo menos 10 atividades concluídas.
+- Possuir equipamento adequado.
+- Não estar participando de outra atividade.
 
-**Objetivo:** valide os requisitos e apresente se a evolução está disponível.
+**Objetivo:** valide os requisitos e apresente se a progressão está disponível.
 
-**Requisitos:** utilize múltiplas condições e operadores lógicos.
+**Requisitos:**
+- Utilize múltiplas condições.
+- Combine operadores lógicos.
+- Apresente o resultado da avaliação.
 
 ### Missão 043 — O Gerenciador de Reservas
 
-**Dificuldade:** 9/10 | **Recompensa:** 100 XP
+**Dificuldade:** 9/10
 
 Uma hospedaria precisa verificar a disponibilidade de quartos.
 
@@ -661,10 +743,11 @@ Regras:
 - Utilize condições booleanas e numéricas.
 - Valide a quantidade de noites.
 - Calcule o desconto somente quando a reserva for válida.
+- Apresente o motivo da recusa, quando houver.
 
 ### Missão 044 — O Sistema de Vantagens Elementais
 
-**Dificuldade:** 9/10 | **Recompensa:** 110 XP
+**Dificuldade:** 9/10
 
 Um sistema de treinamento utiliza vantagens entre três elementos.
 
@@ -677,11 +760,15 @@ Regras:
 
 **Objetivo:** receba o elemento do participante e do adversário e determine o resultado.
 
-**Requisitos:** utilize condicionais encadeadas e comparações de strings.
+**Requisitos:**
+- Utilize condicionais encadeadas.
+- Trabalhe com comparações de strings.
+- Considere todas as combinações possíveis.
+- Trate elementos desconhecidos como entradas inválidas.
 
 ### Missão 045 — O Sistema de Tarifas
 
-**Dificuldade:** 9/10 | **Recompensa:** 110 XP
+**Dificuldade:** 9/10
 
 Um serviço de transporte cobra conforme a distância percorrida:
 - Até 5 km: tarifa fixa de 10 unidades monetárias.
@@ -692,11 +779,15 @@ Um serviço de transporte cobra conforme a distância percorrida:
 
 Para as duas últimas faixas, utilize a distância total multiplicada pela tarifa daquela faixa.
 
-**Requisitos:** utilize condicionais encadeadas e cálculos aritméticos.
+**Requisitos:**
+- Utilize condicionais encadeadas.
+- Realize cálculos aritméticos.
+- Considere distâncias não negativas.
+- Trate corretamente os limites de cada faixa.
 
 ### Missão 046 — O Gerenciador de Permissões
 
-**Dificuldade:** 9/10 | **Recompensa:** 110 XP
+**Dificuldade:** 9/10
 
 Uma aplicação possui três perfis:
 - Administrador: acesso completo.
@@ -708,11 +799,12 @@ Uma aplicação possui três perfis:
 **Requisitos:**
 - Utilize condicionais aninhadas ou encadeadas.
 - Diferencie perfis e recursos.
-- Informe quando o perfil não existir ou quando o acesso for negado.
+- Informe quando o perfil não existir.
+- Informe quando o recurso não estiver autorizado para o perfil.
 
 ### Missão 047 — O Sistema de Multas
 
-**Dificuldade:** 9/10 | **Recompensa:** 120 XP
+**Dificuldade:** 9/10
 
 O reino possui regras de trânsito para carruagens.
 
@@ -724,11 +816,15 @@ Limites:
 
 **Objetivo:** receba a velocidade e calcule a multa correspondente.
 
-**Requisitos:** utilize condicionais encadeadas e trate corretamente os limites de cada faixa.
+**Requisitos:**
+- Utilize condicionais encadeadas.
+- Trabalhe com comparações numéricas.
+- Trate corretamente os limites de cada faixa.
+- Considere velocidades não negativas.
 
 ### Missão 048 — O Sistema de Benefícios
 
-**Dificuldade:** 9/10 | **Recompensa:** 120 XP
+**Dificuldade:** 9/10
 
 Uma empresa oferece benefícios aos funcionários conforme o tempo de serviço.
 
@@ -743,20 +839,21 @@ Regras:
 - Utilize condicionais simples, compostas ou aninhadas.
 - Apresente todos os benefícios acumulados.
 - Não apresente apenas o benefício da faixa mais alta.
+- Considere o tempo de serviço em meses.
 
 ### Missão 049 — O Julgamento do Rei
 
-**Dificuldade:** 10/10 | **Recompensa:** 150 XP
+**Dificuldade:** 10/10
 
-O rei precisa decidir se um aventureiro está preparado para comandar uma expedição.
+Uma instituição precisa decidir se um candidato está preparado para assumir uma posição de liderança.
 
 Requisitos:
 - Nível mínimo 40.
-- Pelo menos 30 missões concluídas.
+- Pelo menos 30 atividades concluídas.
 - Equipamento épico ou lendário.
 - Pelo menos 100 pontos de vida.
 - Não estar incapacitado.
-- Ter concluído uma missão de liderança.
+- Ter concluído uma atividade de liderança.
 - Não estar suspenso.
 
 **Objetivo:** receba todos os dados e apresente:
@@ -768,33 +865,34 @@ Requisitos:
 - Organize suas condições de maneira clara.
 - Evite repetir verificações desnecessariamente.
 - Não encerre a avaliação ao encontrar o primeiro problema.
-- Considere valores inválidos como inconsistências.
+- Identifique informações inválidas.
+- Apresente todos os motivos da reprovação.
 
 ---
 
-# 6. Etapa VI — Chefe da região
+# 6. Etapa VI — Desafio de consolidação
 
 ## Missão 050 — A Restauração da Vila
 
-< CHEFE FINAL DA REGIÃO >
+**Dificuldade:** 10/10
 
-**Dificuldade:** 10/10 | **Recompensa:** 300 XP
+< CHEFE FINAL DA REGIÃO >
 
 ### História
 
-O Guardião Ancestral despertou e começou a destruir os mecanismos responsáveis pelo funcionamento da Vila dos Iniciantes.
+Os mecanismos responsáveis pelo funcionamento da Vila dos Iniciantes foram comprometidos.
 
 Os habitantes não conseguem mais controlar os sistemas de acesso, os mecanismos de segurança e as estruturas de decisão da comunidade.
 
-Para restaurar a vila, o aventureiro deverá construir um sistema capaz de avaliar diferentes situações e determinar as ações corretas.
+Para restaurar a vila, será necessário desenvolver um sistema capaz de avaliar diferentes situações e determinar as ações corretas.
 
-Não será suficiente resolver uma condição isolada. Será necessário combinar tudo o que foi aprendido ao longo da região.
+Não será suficiente resolver uma condição isolada. Será necessário combinar os conhecimentos adquiridos ao longo das 49 missões anteriores.
 
 ### Objetivo
 
-Desenvolva um sistema de restauração dos mecanismos da vila.
+Desenvolva um programa para avaliar se determinado mecanismo da vila pode ser restaurado.
 
-O programa deverá receber as informações de um mecanismo e verificar se ele pode ser restaurado.
+O programa deverá receber as informações de um mecanismo, verificar suas condições e apresentar o resultado da avaliação.
 
 ### Dados de entrada
 
@@ -808,10 +906,10 @@ O sistema deverá receber:
 
 ### Regras de restauração
 
-1. O mecanismo precisa estar identificado corretamente.
+1. O mecanismo precisa possuir uma identificação válida.
 2. O mecanismo não pode estar marcado como destruído.
 3. A energia disponível precisa ser igual ou superior à energia exigida.
-4. O aventureiro precisa possuir autorização.
+4. O responsável precisa possuir autorização.
 5. A conexão com o sistema central precisa estar ativa.
 
 ### Decisões do sistema
@@ -824,39 +922,50 @@ O programa deverá:
 - Identificar quando a conexão estiver indisponível.
 - Autorizar a restauração somente quando todos os requisitos forem atendidos.
 
-### Relatório final
+### Classificação de prioridade
 
-Apresentar:
-- Identificação do mecanismo.
-- Resultado da avaliação.
-- Situação final: restaurado ou não restaurado.
-- Todos os motivos que impediram a restauração, quando houver.
+O sistema também deverá classificar os mecanismos:
 
-### Desafio adicional
-
-Implemente uma classificação de prioridade:
-
-- Prioridade crítica: mecanismo central.
-- Prioridade alta: mecanismo de segurança.
-- Prioridade normal: mecanismo de acesso.
-- Prioridade baixa: mecanismo auxiliar.
+- Mecanismo central: prioridade crítica.
+- Mecanismo de segurança: prioridade alta.
+- Mecanismo de acesso: prioridade normal.
+- Mecanismo auxiliar: prioridade baixa.
 
 A classificação deverá ser apresentada somente quando o mecanismo for reconhecido.
+
+### Relatório final
+
+Apresente:
+- Identificação do mecanismo.
+- Resultado da avaliação.
+- Prioridade do mecanismo, quando reconhecido.
+- Situação final: restaurado ou não restaurado.
+- Todos os motivos que impediram a restauração, quando houver.
 
 ### Restrições
 
 - Não utilizar bibliotecas externas.
-- Não utilizar `switch/case`.
 - Não utilizar estruturas de repetição.
+- Não utilizar funções ou modularização.
+- Não utilizar arrays, listas ou objetos.
+- Não utilizar `switch/case`.
 - Utilizar condicionais simples, compostas e aninhadas.
 - Organizar as decisões de maneira legível.
 - Validar os dados recebidos.
 - Apresentar todos os problemas identificados, não apenas o primeiro.
 
-### Critério de aprovação
+### Critérios de aprovação
 
-O sistema deverá funcionar corretamente nos diferentes cenários, respeitar todas as regras de restauração e evitar decisões contraditórias.
+A implementação deverá:
 
-**Marco de progressão:** ao concluir esta missão e atingir 50 missões aprovadas, o personagem desbloqueia o título **Guardião da Vila**.
+1. Avaliar corretamente todas as condições.
+2. Identificar dados e estados inválidos.
+3. Impedir restaurações quando qualquer requisito obrigatório não for atendido.
+4. Apresentar todos os motivos de impedimento.
+5. Classificar corretamente a prioridade dos mecanismos.
+6. Produzir resultados consistentes em diferentes cenários de teste.
+7. Manter o código organizado e compreensível.
 
-**A aventura continua nas Planícies da Dualidade.**
+**Conclusão da Região 01:** ao finalizar esta missão nas três linguagens, o estudante deverá demonstrar domínio dos fundamentos de programação, operadores e estruturas condicionais.
+
+**A jornada continua na Floresta dos Ciclos.**
