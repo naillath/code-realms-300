@@ -1,1 +1,1 @@
-console.log("Code Realms Online!");
+console.log("⚔️ CODE REALMS 300 — Sua jornada começa aqui!\n");
