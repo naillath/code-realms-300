@@ -1,159 +1,104 @@
 # ⚔️ Code Realms 300
 
-### Três linguagens. Três aventureiros. Uma jornada de evolução.
+### Três linguagens. 300 missões. Uma jornada de evolução.
 
-Code Realms 300 é um projeto de aprendizagem prática de programação estruturado como uma campanha de RPG.
+Code Realms 300 é um projeto de aprendizagem prática e evolução em programação, composto por **300 desafios progressivos**, desenvolvidos em três linguagens: **JavaScript/Node.js, C e Python**.
 
-O projeto reúne **300 desafios de programação**, distribuídos em diferentes regiões, com progressão por experiência, classes, personagens, conquistas, penalidades e chefes de região.
+O projeto tem como objetivo desenvolver raciocínio lógico, capacidade de resolução de problemas, domínio de estruturas de programação e autonomia no desenvolvimento de software.
 
-O objetivo é desenvolver raciocínio lógico, autonomia na resolução de problemas e domínio progressivo de diferentes linguagens de programação.
-
-Mais do que resolver exercícios, a proposta é aprender a construir soluções para problemas que poderiam existir em sistemas reais.
+Mais do que resolver exercícios isolados, a proposta é construir uma base sólida de conhecimentos, aplicando conceitos progressivamente mais complexos e desenvolvendo soluções que possam ser utilizadas em projetos reais.
 
 ---
 
-## 🗺️ Sobre a campanha
+## 🗺️ Estrutura das missões
 
-A jornada é composta por seis regiões, cada uma dedicada ao desenvolvimento de determinados conhecimentos de programação.
+A jornada é dividida em seis regiões, cada uma composta por 50 missões.
 
-Cada região possui 50 desafios, organizados em seis etapas:
+Cada região representa uma etapa de evolução técnica, introduzindo novos conceitos e aumentando gradualmente a complexidade dos desafios.
 
-| Etapa | Desafios | Objetivo |
+Cada região possui seis etapas:
+
+| Etapa | Missões | Objetivo |
 |---|---:|---|
-| Aprendizagem e reconhecimento | 001–010 | Compreender os fundamentos |
-| Aplicação prática | 011–020 | Aplicar os conceitos |
-| Combinação de conceitos | 021–030 | Integrar diferentes conhecimentos |
-| Problemas contextualizados | 031–040 | Resolver situações reais |
-| Desafios avançados | 041–049 | Desenvolver autonomia |
-| Chefe da região | 050 | Consolidar o aprendizado |
+| Fundamentos e reconhecimento | 001–010 | Compreender os conceitos fundamentais |
+| Aplicação prática | 011–020 | Aplicar os conhecimentos adquiridos |
+| Combinação de conceitos | 021–030 | Integrar diferentes estruturas e técnicas |
+| Problemas contextualizados | 031–040 | Resolver situações próximas de problemas reais |
+| Desafios avançados | 041–049 | Desenvolver autonomia e raciocínio |
+| Desafio de consolidação | 050 | Consolidar os conhecimentos da região |
 
-**Total: 300 desafios.**
-
-Cada desafio será implementado em três linguagens, proporcionando diferentes perspectivas sobre o mesmo problema.
+**Total: 6 regiões e 300 missões.**
 
 ---
 
-## 🛡️ Os três aventureiros
+## 💻 Linguagens de programação
 
-Cada linguagem possui um personagem próprio, com classe, características e progressão independentes.
+Todas as missões deverão ser implementadas nas três linguagens.
 
-| Personagem | Classe | Linguagem | HP inicial |
-|---|---|---|---:|
-| Guerreiro | Guerreiro | C | 150 |
-| Mago | Mago | Python | 90 |
-| Arqueiro | Arqueiro | JavaScript / Node.js | 120 |
-
-### Guerreiro — C
-
-Representa resistência, disciplina e controle.
-
-A linguagem C exige atenção à estrutura, aos tipos de dados e ao gerenciamento de recursos.
-
-### Mago — Python
-
-Representa inteligência, conhecimento e versatilidade.
-
-Python oferece uma sintaxe expressiva e permite desenvolver soluções de maneira objetiva.
-
-### Arqueiro — JavaScript / Node.js
-
-Representa agilidade, técnica e flexibilidade.
-
-JavaScript permite trabalhar com aplicações modernas, lógica de programação e desenvolvimento back-end com Node.js.
-
-### Progressão independente
-
-Cada personagem possui sua própria:
-
-- Experiência (XP).
-- Evolução de nível.
-- Barra de vida (HP).
-- Atributos.
-- Inventário.
-- Moedas.
-- Histórico de missões.
-- Conquistas.
-
-O progresso de uma linguagem não é transferido para outra.
-
----
-
-## ⭐ Sistema de experiência
-
-As missões concedem XP individualmente a cada personagem.
-
-A experiência é conquistada mediante aprovação na avaliação da implementação.
-
-A evolução contempla:
-
-- Conclusão de missões.
-- Derrota de chefes.
-- Conquista de regiões.
-- Desafios especiais.
-- Atividades relacionadas ao Git e à qualidade do código.
-
-O XP conquistado não é perdido em caso de morte do personagem.
-
----
-
-## ❤️ Sistema de sobrevivência
-
-Cada classe possui uma quantidade inicial de HP.
-
-As falhas nas missões provocam penalidades de acordo com a dificuldade do desafio.
-
-Quando o HP chega a zero, o personagem fica incapacitado.
-
-A recuperação poderá acontecer por meio de:
-
-- Missões especiais de recuperação.
-- Tratamento na hospedaria mediante pagamento de moedas.
-
-A campanha possui consequências, mas o progresso de aprendizagem conquistado permanece preservado.
-
----
-
-## 🌿 Regiões da campanha
-
-| Região | Nome | Situação |
+| Linguagem | Tecnologia | Objetivo |
 |---|---|---|
-| 01 | Vila dos Iniciantes | Em preparação |
-| 02 | A definir | Planejada |
-| 03 | A definir | Planejada |
-| 04 | A definir | Planejada |
-| 05 | A definir | Planejada |
-| 06 | A definir | Planejada |
+| JavaScript | Node.js | Desenvolver lógica e aplicações back-end |
+| C | Linguagem C | Compreender fundamentos, estruturas e gerenciamento de memória |
+| Python | Python 3 | Desenvolver soluções utilizando uma linguagem expressiva e versátil |
 
-Cada região apresentará novos conceitos, desafios progressivos e um chefe final.
+### Critérios comuns
+
+As três implementações deverão seguir:
+
+- O mesmo enunciado.
+- Os mesmos requisitos funcionais.
+- Os mesmos critérios de aprovação.
+- As mesmas regras de validação.
+
+A implementação será independente em cada linguagem, respeitando suas particularidades e boas práticas.
+
+O objetivo não é apenas reproduzir uma solução, mas compreender como diferentes linguagens abordam o mesmo problema.
+
+---
+
+## 🌿 Regiões de aprendizagem
+
+| Região | Nome | Missões | Situação |
+|---|---|---:|---|
+| 01 | Vila dos Iniciantes | 001–050 | Em desenvolvimento |
+| 02 | A definir | 051–100 | Planejada |
+| 03 | A definir | 101–150 | Planejada |
+| 04 | A definir | 151–200 | Planejada |
+| 05 | A definir | 201–250 | Planejada |
+| 06 | A definir | 251–300 | Planejada |
+
+Cada região introduzirá novos conhecimentos e desafios, permitindo acompanhar a evolução técnica ao longo do projeto.
+
+A identidade visual e temática de Code Realms será preservada como elemento de organização e ambientação.
 
 ---
 
 ## 🌳 Organização do Git
 
-O projeto utiliza branches independentes para cada implementação.
+O projeto utiliza branches independentes para organizar a documentação e as implementações.
 
 | Branch | Responsabilidade |
 |---|---|
-| `main` | Documentação, regulamentos, desafios e fichas oficiais |
-| `javascript-node` | Implementações em JavaScript / Node.js |
+| `main` | Documentação oficial, enunciados e organização das missões |
+| `javascript-node` | Implementações em JavaScript/Node.js |
 | `c` | Implementações em C |
 | `python` | Implementações em Python |
 
 A branch `main` representa a referência oficial do projeto.
 
-As soluções permanecem em suas respectivas branches, sem privilegiar uma linguagem.
+Cada linguagem possui seu próprio histórico de desenvolvimento, permitindo acompanhar a evolução das soluções de maneira independente.
 
-O desenvolvimento utiliza:
+### Boas práticas
 
-- Commits organizados.
-- Histórico de alterações.
-- Branches independentes.
-- Revisão de soluções.
-- Tags para marcar regiões concluídas.
+- Commits organizados e descritivos.
+- Histórico de alterações preservado.
+- Separação das implementações por linguagem.
+- Organização consistente dos arquivos.
+- Uso de Git e GitHub durante todo o desenvolvimento.
 
 ---
 
-## 📁 Estrutura do projeto
+## 📁 Organização do projeto
 
 ```text
 code-realms-300/
@@ -161,27 +106,11 @@ code-realms-300/
 ├── README.md
 ├── .gitignore
 │
-├── data/
-│   └── personagens/
-│       ├── guerreiro-c.json
-│       ├── mago-python.json
-│       └── arqueiro-javascript.json
-│
 ├── docs/
-│   ├── regulamento/
-│   │   ├── sistema-de-personagens.md
-│   │   ├── sistema-de-xp.md
-│   │   └── sistema-de-penalidades.md
-│   │
-│   ├── regioes/
-│   │   └── regiao-01
-│   │       ├── livro-de-missoes.md
-│   │       └── README.md
-│   │
-│   └── fichas/
-│       ├── guerreiro-c.md
-│       ├── mago-python.md
-│       └── arqueiro-javascript.md
+│   └── regioes/
+│       └── regiao-01/
+│           ├── README.md
+│           └── livro-de-missoes.md
 │
 ├── src/
 │   └── regiao-01/
@@ -192,41 +121,60 @@ code-realms-300/
 └── jogos-finais/
 ```
 
-A documentação oficial, os dados dos personagens e os enunciados ficam centralizados na `main`.
+### Responsabilidade dos diretórios
 
-As implementações de cada linguagem ficam em suas respectivas branches.
+| Diretório | Finalidade |
+|---|---|
+| `docs/` | Documentação e enunciados oficiais |
+| `src/` | Organização das implementações |
+| `tests/` | Testes e validações das soluções |
+| `jogos-finais/` | Projetos práticos de consolidação |
+
+A documentação e os enunciados ficam centralizados na `main`.
+
+As implementações permanecem em suas respectivas branches.
 
 ---
 
-## 🏆 Objetivos finais
+## 🏆 Objetivos de aprendizagem
 
-Ao concluir a campanha, o aventureiro deverá ter desenvolvido:
+Ao concluir as 300 missões, espera-se desenvolver conhecimentos e habilidades em:
 
-- Raciocínio lógico e resolução de problemas.
-- Domínio de estruturas condicionais.
-- Manipulação de arrays e objetos.
+- Lógica de programação e resolução de problemas.
+- Variáveis, tipos de dados e operadores.
+- Estruturas condicionais e repetição.
+- Arrays, objetos e coleções.
 - Funções e modularização.
+- Manipulação de strings.
 - Estruturas de dados.
-- Organização e persistência de informações.
-- Práticas de Git e GitHub.
-- Capacidade de desenvolver aplicações.
+- Algoritmos e técnicas de resolução.
+- Manipulação de arquivos e persistência de dados.
+- Tratamento de erros e validações.
+- Organização e qualidade de código.
+- Git, GitHub e controle de versão.
 
-### Os cinco jogos finais
+O aprendizado será progressivo, com aplicação prática dos conceitos ao longo das seis regiões.
 
-Após os 300 desafios, serão propostos cinco projetos especiais para consolidar os conhecimentos adquiridos.
+---
 
-Os jogos serão desenvolvidos de maneira independente, utilizando os conhecimentos acumulados durante a campanha.
+## 🎮 Projetos de consolidação
+
+Após a conclusão das 300 missões, serão desenvolvidos cinco projetos especiais para consolidar os conhecimentos adquiridos.
+
+Esses projetos terão como objetivo transformar o conhecimento acumulado em aplicações funcionais, aproximando o aprendizado de situações reais de desenvolvimento de software.
+
+A proposta é utilizar os fundamentos adquiridos durante as missões para planejar, estruturar e implementar projetos completos.
 
 ---
 
 ## 📜 Filosofia do projeto
 
-> O conhecimento não é conquistado apenas pela vitória, mas também pela capacidade de aprender com cada derrota.
+> A evolução não acontece quando encontramos todas as respostas, mas quando desenvolvemos a capacidade de resolver novos problemas.
 
 Code Realms 300 não é uma corrida para completar exercícios.
 
-É uma jornada de construção de conhecimento, disciplina e autonomia.
+É um compromisso com a prática, a consistência e a evolução técnica.
 
-**Que a aventura comece!**
+Cada missão representa uma oportunidade de aprender, experimentar, errar, corrigir e desenvolver uma solução melhor.
 
-⚔️ Um jogador. Três aventureiros. Trezentas missões. Uma grande jornada.
+**⚔️ Um projeto. Três linguagens. Trezentas missões. Uma jornada de evolução.**
