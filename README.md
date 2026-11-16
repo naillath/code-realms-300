@@ -174,7 +174,9 @@ code-realms-300/
 │   │   └── sistema-de-penalidades.md
 │   │
 │   ├── regioes/
-│   │   └── regiao-01-vila-dos-iniciantes.md
+│   │   └── regiao-01
+│   │       ├── livro-de-missoes.md
+│   │       └── README.md
 │   │
 │   └── fichas/
 │       ├── guerreiro-c.md
