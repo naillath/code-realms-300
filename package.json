@@ -1,0 +1,26 @@
+{
+  "name": "code-realms-300",
+  "version": "1.0.0",
+  "description": "Projeto de aprendizagem prática e evolução em programação, com 300 desafios progressivos desenvolvidos em JavaScript/Node.js, C e Python.",
+  "scripts": {
+    "start": "node tests/playground.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naillath/code-realms-300.git"
+  },
+  "keywords": [
+    "programming",
+    "javascript",
+    "nodejs",
+    "c",
+    "python",
+    "coding-challenges"
+  ],
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/naillath/code-realms-300/issues"
+  },
+  "homepage": "https://github.com/naillath/code-realms-300#readme"
+}
