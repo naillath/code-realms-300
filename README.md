@@ -171,7 +171,6 @@ code-realms-300/
 │   ├── regulamento/
 │   │   ├── sistema-de-personagens.md
 │   │   ├── sistema-de-xp.md
-│   │   ├── sistema-de-combate.md
 │   │   └── sistema-de-penalidades.md
 │   │
 │   ├── regioes/
