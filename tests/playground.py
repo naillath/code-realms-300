@@ -1,0 +1,1 @@
+print("⚔️ CODE REALMS 300 — Sua jornada começa aqui!\n")
